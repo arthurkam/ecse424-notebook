@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vieport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>NavSense | HCI notebook</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="notebook.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- ARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style>
+div.thumbnail    {    text-align: center;
+}
+      </style>
+  </head>
+  <body data-spy="scroll" data-target=".navBox" style="padding-top: 60px; position:relative;" data-offset="10" >
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">NavSense</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul  class="nav navbar-nav" role="tablist">
+        <li class=""><a href="proposal.html">Project Proposal</span></a></li>
+        <li class=""><a href="lowFiPrototype.html">Low Fidelity Prototype</span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div  class="navBox" id="" class="">
+                <ul  id="navbar" class="nav nav-pills nav-stacked" role="tablist">
+                  <li class=""><a href="#userObservations">User Observations</span></a></li>
+                  <li class=""><a href="#persona">Personas</span></a></li>
+                  <li class=""><a href="#relatedProducts">Related Products</span></a></li>
+                  <li class=""><a href="#productComparison">Product Comparison</span></a></li>
+                  <li class=""><a href="#highLevel">High Level Design</span></a></li>
+                  <li class=""><a href="#feasibility">Feasibility</span></a></li>
+                  <li class=""><a href="#usercase">Use Case Scenarios</span></a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="col-md-10">
+          <div class="page-header">
+            <h1 style="font-size:3em;">Project Proposal</h1>
+          </div>
+          <div id="userObservations">
+            <h1><a id="User_Observations_0"></a>User Observations:</h1>
+            <h2><a id="Observed_user_1_1"></a>Observed user #1:</h2>
+            <ul>
+              <li>Female in mid 20’s observed outside McGill University crossing the street</li>
+              <li>Wearing backpack and walking alone</li>
+              <li>Looking at her cell phone and trying to look at street signs</li>
+              <li>Eventually gives up with looking at her phone and calls somebody</li>
+              <li>Waits on corner until friends meets her</li>
+            </ul>
+            <h2><a id="Observed_user_2_8"></a>Observed user #2:</h2>
+            <ul>
+              <li>Female in mid 40’s asking for directions in McGill metro station</li>
+              <li>She was carrying a 20 inch suitcase and shoulder bag</li>
+              <li>She just arrived in Montreal and was unfamiliar with the location</li>
+              <li>She wanted to get to the Union - President kennedy intersection</li>
+              <li>She ended up looking at a map</li>
+            </ul>
+            <h2><a id="Observed_user_3_15"></a>Observed user #3:</h2>
+            <ul>
+              <li>Elder couple from France walking on Avenue du Parc</li>
+              <li>Holding a map and a Montreal tourism book</li>
+              <li>The tourism book had a map specifying key locations to visit in Montreal including McGill University</li>
+              <li>The couple stopped to ask us for directions toards McGill University</li>
+            </ul>
+            <h2><a id="Observed_user_4_21"></a>Observed user #4:</h2>
+            <ul>
+              <li>Group of students leaving from a party looking for a way to get back home from the AMC forum to the McGill Ghetto</li>
+              <li>Cannot easily locate their bearings due being unfamiliar with the location and possibly under the influence of alcoholic beverages</li>
+              <li>Guessed the right direction but needed to ask a passerby for directions to confirm</li>
+            </ul>
+
+          </div>
+          <div id="persona">
+            <h1><a id="Personas_0"></a>Personas</h1>
+            <div class="thumbnail" style="float: right; margin-left: 10px">
+              <img src="figEmma.png" style="width:200px;"/>
+            </div>
+            <h4><a id="Emma_Martin_1"></a>Emma Martin</h4>
+            <p>18 years old, Student from France</p>
+            <p>Emma just moved to Montreal from France to study at McGill University. She has been to Montreal once before but doesn’t know her way around at all. When she did previously visit Montreal, she really enjoyed the Notre-Dame Cathedral and the surrounding area. As with most people her age, she uses her cell phone frequently and is comfortable with the adaptation new technologies. She wants to familiarize herself with the city so that she can feel more comfortable living here alone. Instead of having to look at her phone while attempting to navigate unfamiliar streets, Emma wants a simpler way to orient herself in her new environment.</p>
+            <p>Goals  - To be able to eventually feel comfortable navigating her new city by herself without having to constantly stare at her phone.</p>
+            <p>Skills/Abilities - Social media master, tech savvy, tap dancing</p>
+            <p>Traits- Willing to explore, open to new ideas</p>
+            <p>Needs- To feel more comfortable navigating the new city that she recently moved to</p>
+            <p>Problem to be alleviated- Poor sense of direction</p>
+            <div class="thumbnail" style="float: right; margin-left: 10px">
+              <img src="figTaylor.png" style="width:200px;"/>
+            </div>
+            <h4><a id="Taylor_Huxley_18"></a>Taylor Huxley</h4>
+            <p>35 years old, Outdoorsman</p>
+            <p>Although Taylor has lived in Montreal for his entire life, he can still appreciate being alone in the outdoors. At the end of his work week, Taylor typically heads up to Baie-Comeau to hike and camp for the weekend. When hiking in the deep woods,  he often finds himself walking in circles unable to locate certain landmarks. While Taylor doesn’t exceedingly use his cell phone throughout the day, he is quite comfortable with the technology nonetheless. Taylor would love a way to be able to easily locate his tent along with the occasional water source whenever he wants without getting lost or fumbling with his phone.</p>
+            <p>Goals - Be able to confidently navigate the outdoors regardless of the unanticipated nature of his hikes.</p>
+            <p>Skills/Abilities - hunting/fishing, tax returns</p>
+            <p>Traits- Tends to navigate areas on his on, independent</p>
+            <p>Needs- A better way of orienting himself during his extensive hikes.</p>
+            <p>Problem to be alleviated- Unable to find his way back to the campsite with ease</p>
+            <div class="thumbnail" style="float: right; margin-left: 10px">
+              <img src="figSteven.png" style="width:200px;"/>
+            </div>
+            <h4><a id="Steven_Dennis_32"></a>Steven Dennis</h4>
+            <p>14 years old, High School Student</p>
+            <p>Steven recently turned 14 and is looking forard to being one of the upper classmen in his school this year. Since his grades were good last year, his mom surprised him with a new smartphone for his birthday. Although he has trouble keeping it in his pocket, both of his parents agree that he should be more discrete with it when walking home alone. Steven occasionally walks through areas with older boys who would have no problem snatching up his phone. He also agrees that it would be nice to feel confident of his way back home without having to pull out his shiny new mobile device.</p>
+            <p>Goals - To be more discreet with his phone while at the same time be able to find his way home.</p>
+            <p>Skills/Abilities - video games, technology</p>
+            <p>Traits- Immature, still relies on his parents for most of his navigational needs</p>
+            <p>Needs- A discreet way to learn to orient himself in his city without having to take out his phone</p>
+            <p>Problem to be alleviated- His habit of always looking at his phone while walking around</p>
+
+          </div>
+          <div id="relatedProducts">
+            <h1><a id="Related_Products_0"></a>Related Products</h1>
+            <p>Multiple products are currently available to address the navigational needs of the general public. These products cover a wide range of interaction modalities, functionalities and characteristics. The objective of this section is to provide an overview of the most widely used systems and navigational solutions at the time of this writing. Also note that this analysis is limited to commercially available systems. For a more synthesized overview of the advantages and limitations of each product, one can jump to the Product Comparison section.
+            </p>
+            <h2>Physical compass and map</h2>
+            <p>It is important to note that the use of a compass and map remains one of the most reliable ways to navigate through any kind of terrain (i.e. city, forest, etc.). However, their use as a daily orientation/navigation aid for the identified personas is limited by the fact that their operation is not intuitive. Their proper operation relies on intensive training and frequent use. Moreover, the typical functionality of a compass/map requires the user to direct all of their attention to it and use both hands. Because of this, the user loses the majority of their situational awareness while using the system. If the user intends to travel to a new location, they must also purchase separate maps.</p>
+            <p>Price :  &gt; 30 $ for an entry-level quality compass and local map + subsequent maps purchase</p>
+            <h2><a id="Dedicated_handheld_GPS_8"></a>Dedicated handheld GPS</h2>
+            <div class="thumbnail" style="float: left; margin-right: 10px">
+              <img src="fig2.jpg"/>
+              fig. 2.
+            </div>
+            <p>Handheld GPS are widely used in the outdoor domain. They provide a lot of information such as current latitude/longitude, heading, speed, trajectory, altitude, etc. Their interface is often composed of a few buttons and a black/grey LCD display such as the one displayed in fig. 2. This also presents one more item to carry/hold when our persona’s hands are already filled by the bags, a purse or the phone they are carrying.</p>
+            <p>Limiting the analysis to the device pictured here, the input method composed of 8 buttons around hat is assumed to be a circular directional pad is far from intuitive.  There seems to be a certain pattern for how the functions map to the buttons. Menu related elements (Back, Menu and Enter) are at the right, zoom in and out at the top. However the left side is not as logical, starting with a quit button at the bottom (difference between quit and back?), followed by the red circle which is assumed to be a recording function (what is being recorded?) and then a “Mem” button which probably refers to saved trajectories or data. In terms of output to the user, this device is limited to visual feedback. This collection of information is not relevant for a casual user who solely wants to orient themselves with a glance, or without even looking at their device. Simply put, a user needs to carefully read the user manual in order to be able to appropriately use all of the device’s functions.</p>
+            <p>Price : &gt; 100 $ for an entry-level knon brand device (Garmin, Magellan, etc.) + maps purchase</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2><a id="Smartphone_app_14"></a>Smartphone app</h2>
+
+            <div class="thumbnail" style="float: right;">
+              <img src="fig3.jpg" style="height:300px"/>
+              fig. 3.
+            </div>
+            <p>There are a lot of apps intended for navigation but this brief analysis is focused on Google maps turn-by-turn navigation. An image of the interface in use is visible in fig. 3. This application offers a lot of interesting features such as choice of transportation method and display type (3D navigation, street vie or satellite view). An obvious advantage of this approach is that it only requires a smartphone which a large portion of the population already owns. This application is assumed to be easy to use for someone already familiar with smartphones in general.</p>
+            <p>The user interface is not too cluttered and offers basic direction indications with associated distances as well as an overview of the map/satellite view/street view. In addition to visual indications, one can activate voice-guided directions. This function is particularly attractive for the personas described above since it does not require them to handle the device once it has been set up. However, audio feedback can be masked in noisy environments if the user does not use headphones. The use of headphones can also lead to a reduced situational awareness.</p>
+            <p>Price : Free (assuming the user already owns a smartphone)</p>
+            <br>
+            <h2><a id="wearables_20"></a>Wearables</h2>
+            <p>Different wearable technologies exist to address navigation and orientation issues. Only three of these devices will be analyzed in this section. These devices were chosen in particular due to the different body locations where they are worn.</p>
+            <h3><a id="North_Pa_22"></a>North Paw</h3>
+            <div class="thumbnail" style="float: right;">
+              <img src="fig4.jpg" style="width:300px"/>
+              fig. 4.
+            </div>
+            <p>The first unique feature about North Paw is that is independent from any other systems such as a smartphone. It is an ankle bracelet containing an array of vibrating actuators distributed around the system. Its principle of operation is simple; it senses magnetic North and actuates the appropriate actuator around the bracelet to point to it just as a compass would.</p>
+            <p>There is no human input necessary to operate it if you do not account for turning it on and potentially, calibration.  The user wears it around their ankle hidden under their pants making this system discrete. Furthermore since it does not require manual operation, the users are free to carry all of their belongings around freely. One should however be aware that knowing where magnetic North is may have a limited impact on daily navigation/orientation.</p>
+            <p>Price : 150 $ for kit, 200 $ preassembled</p>
+            <br>
+            <h3><a id="Smartwatch_29"></a>Smartwatch</h3>
+            <div class="thumbnail" style="float: right;margin-left:10px;">
+              <img src="fig5.jpg" style="width:250px;"/>
+              fig. 5.
+            </div>
+            <p>Different smartwatches offer various features but this analysis is limited to the low cost pebble. This devices requires a smartphone to use the Nav Me application. Once it is set up, the wearable device acts as a remote multimodal display to make google maps more convenient in terms of display capabilities. By using this combination, the personas do not need to manipulate their phones in order to receive the needed navigation information.</p>
+            <p>In terms of input, when using the Nav Me application, the user only has to enter the desired destination into Google maps as he would be using his phone. However in the case of the smartwatch, the feedback experience is much richer. In fact, a new modality is added to the interface by using the smartwatch: vibration. By using this approach, the system avoids issues associated with the noisy commuter environment and makes the interaction much more personal. In this case, vibrations are used to indicate a new instruction to the user. This approach has a clear advantage of letting the personas keep their phones tucked in their pockets or purses while benefiting from the navigation instruction at a glance. However, this approach again raises the issue of situational awareness: the user still has to look at the device to read the instructions.</p>
+            <p>Price : 99.99 $ (watch only, assuming the user owns a Bluetooth enabled smartphone)</p>
+            <h3><a id="Smart_footear_35"></a>Smart footwear</h3>
+            <div class="thumbnail" style="float: right; margin-left:10px">
+              <img src="fig6.jpg" style="width:250px;"/>
+              fig. 6.
+            </div>
+            <p>Although there are no quite a few available models of smart shoes and insoles on the market, this analysis is limited to the Lechal smart shoe (fig. 6). This device is different in comparison to the other wearables because it actually replaces that the user wears daily. It is important to note that in order to be used, this system requires the companion app to run on a smartphone.</p>
+            <p>In terms of inputs, multiple options are available to the user and have to be turned on/off in the mobile application. There are options for voice commands, foot gestures commands as ell as the visual on-screen interface. In terms of outputs, these smart shoes have powerful vibration actuators located in the pod (grey block on the side). These electromechanical elements are used to transfer instructions to the user through different vibration patterns. Unique patterns are used to indicate whether the users should turn left or right.</p>
+            <p>Price : 220 $ (pair of shoe and single basic pod, assuming the user ons a Bluetooth enabled smartphone)</p>
+
+          </div>
+          <div id="productComparison">
+            <h1><a id="Product_Comparison_0"></a>Product Comparison</h1>
+            <p>This section presents a summary of the advantages and limitation of each of the presented product. Then, an explanation of ho our proposed interface can contribute to enhancing the user experience in daily navigation/orientation tasks.</p>
+            <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Advantages</th>
+                  <th>Limitations</th>
+                </tr>
+                </thread>
+                <tbody>
+                  <tr>
+                    <td>Physical compass and map</td>
+                    <td>Precise<br>Reliable<br>Price</td>
+                    <td>Not intuitive<br>Cumbersome<br>Situational awareness</td>
+                  </tr>
+                  <tr>
+                    <td>Handheld GPS<br>
+                      Garmin GPS 72H</td>
+                    <td>Precise</td>
+                    <td>Battery poered<br>Cumbersome<br>Situational awareness<br>Not intuitive<br>Price</td>
+                  </tr>
+                  <tr>
+                    <td>Smartphone and app.<br>
+                      Google map turn-by-turn navigation</td>
+                    <td> Price<br>Intuitive interface<br>Multimodal interactions
+                      (visual, audio)</td>
+                    <td>
+                      Battery powered<br>Already in use (calling, texting, etc.)<br>Situational awareness<br>Limited precision
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>North Paw</td>
+                    <td>Smartphone independent
+                      <br>Ease of use
+                      <br>Vibration based
+                      <br>Situational awareness
+                      <br>Free hands
+                    </td>
+                    <td>
+                      Battery powered
+                      <br>Uncertain effect on orientation
+                      <br>Price
+                      <br>Limited precision
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Smartwatch
+                      <br>Pebble
+                    </td>
+                    <td>
+                      Price
+                      <br>Multimodal interactions
+                      (visual, audio, vibrations)
+                      <br>Free hands
+                    </td>
+                    <td>
+                      Battery powered
+                      <br>Limited precision
+                      <br>Limited information rendered by system
+                      <br>Situational awareness
+                    </td>
+                    <tr>
+                      <td>
+                        Smart shoe<br>
+                        Lechal shoe with essential pod
+                      </td>
+                      <td>
+                        Multimodal interactions
+                        (visual, audio, vibrations)
+                        <br>Free hands
+                        <br>Vibration encoded navigation instructions
+                        <br>Situational awareness
+                      </td>
+                      <td>
+                        Battery powered
+                        <br>Limited precision
+                        <br>Price
+                        <br>Aesthetics
+                      </td>
+                    </tr>
+                  </tr>
+                </tbody>
+            </table>
+            <div class="thumbnail" style="">
+              <img src="fig7.png" style=""/>
+              fig. 7.
+            </div>
+            <p>All of these related products present advantages in terms of interfaces to help the personas in their daily navigation/orientation. Hoever, some of the limitations presented above simply cannot be ignored when considering the needs and living habits of the personas.</p>
+            <p>Along the same lines, our proposed approach takes root in the advantages of the smartphone and wearable solutions mainly because of personas’ living habits and budget. It is also hypothesized that in order to maximize the orientation efficiency, the system has to be beacon based instead of being “navigation instruction” based. This means that the user has the ability to set his desired reference points to known locations (fig 7., workplace (A), common public attraction (B), apartment (C), etc.). Another major difference between our solution and previously presented products is the way vibrations are used. ONLY when the user’s orientation is aligned with one of its selected beacons (A - McConnel engineering building on fig. 7), a signature vibration pattern associated to that element will be produced. In addition to providing the user with an orientation reference based on his selected points of interests, bird-flight distance between the user and the given beacon is to be modulated in the vibration signal to further inform him of his position.</p>
+
+          </div>
+          <br>
+          <div id="highLevel">
+            <h1><a id="High_Level_Design_0"></a>High Level Design</h1>
+            <div class="thumbnail" style="">
+              <img src="fig8.png"/>
+              fig. 8.
+            </div>
+            <p>This section presents the overall architecture of the proposed system. Fig. 8 shows all of the software APIs and SDKs as well as a schematic representation of the architecture. Apart from the user, two main components are used, an android smartphone and the pebble smartwatch. Software APIs are provided by google for reading onboard sensors, obtaining map related information (position, etc.)</p>
+            <p>It is assumed that any team would be able to pick up this schematic and develop the proposed system, assuming they have programming knowledge in Java (Android side) and C (Pebble Smartwatch).</p>
+          </div>
+          <div id="feasibility">
+            <h1><a id="Feasibility_4"></a>Feasibility</h1>
+            <p>With team members having multiple skills ranging from web design to hardware engineering there is no doubt that this system can be implemented in the allotted time frame.</p>
+            <p>Multiple aspects have to be taken in account. The first one is hardare. The fact that all of the hardware is already available to the team (android smartphones and pebble smartwatch) eliminates risks associated with parts sourcing. On the software side, team members have extended experience with C programming language (for the pebble) and have already used Java to program simple android applications.</p>
+            <p>A large portion of the development time will be associated to programming the Android device, especially the Google Maps features such as selecting the points of interest and calculating distance/orientation associated with it. However, the team has access to manufacturers APIs/SDKs and will be using basic functions extensively documented.</p>
+          </div>
+          <div id="usercase">
+            <h1><a id="Use_Case_Scenarios_0"></a>Use Case Scenarios</h1>
+            <p>Scenario 1: User pairs wearable navigation device via bluetooth</p>
+            <ul>
+              <li>User enables the bluetooth radio on their mobile phone</li>
+              <li>User locates the wearable device in the bluetooth menu</li>
+              <li>The mobile phone should not also be visible to the wearable device</li>
+              <li>Pairing process should complete once user enters code provided by the wearable device</li>
+              <li>Devices should now be successfully paired</li>
+            </ul>
+            <p>Scenario 2: User starts the mobile application</p>
+            <ul>
+              <li>User takes out smartphone</li>
+              <li>Opens up the NavSense mobile application
+                <ul>
+                  <li>Can access application on main menu</li>
+                  <li>Can access application through shortcut</li>
+                </ul>
+              </li>
+              <li>Short splash screen with logo (few seconds)</li>
+              <li>application main windows is presented</li>
+            </ul>
+            <p>Scenario 3 : User selects a single reference point on the map</p>
+            <ul>
+              <li>User clicks on the point in the map he wants to use as a reference</li>
+              <li>He is prompted to associate the reference point to one of the available feedback patterns</li>
+              <li>The vibration association dialog box closes</li>
+              <li>He starts walking</li>
+            </ul>
+            <p>Scenario 4 : User selects multiple reference points on the map</p>
+            <ul>
+              <li>User clicks on the point in the map he wants to use as a reference</li>
+              <li>He is prompted to associate the reference point to one of the available feedback patterns</li>
+              <li>The vibration association dialog box closes</li>
+              <li>He repeats the process for every reference point</li>
+            </ul>
+            <p>Scenario 5 : Maximum of number of reference points is reached and user wants to add a point</p>
+            <ul>
+              <li>User clicks on the point in the map he wants to use as a reference</li>
+              <li>A dialog box opens and says that the maximum number of reference points is reached giving - the option to replace an existing reference or to cancel the addition</li>
+              <li>The user picks an option
+                <ul>
+                  <li>Replace : He is prompted ith existing references to pick one to be replaced</li>
+                  <li>Cancel : Dialog box closes</li>
+                </ul>
+              </li>
+            </ul>
+            <p>Scenario 6 : User comes to a stop and wants to know where he is</p>
+            <ul>
+              <li>User changes its orientation until he can feel the feedback pattern associated to one of his references.</li>
+              <li>If he needs further information, he continues to rotate until the next pattern is felt.</li>
+              <li>He resumes walking knowing its approximate position in relation to his chosen references.</li>
+            </ul>
+            <p>Scenario 7 : User is walking directly towards one of his references</p>
+            <ul>
+              <li>User gets feedback at the moment he is oriented in the right direction</li>
+              <li>He will receive the feedback pattern at fixed time intervals</li>
+              <li>If he needs to be reassured that he is still in correct alignment, he can shake the wearable or smartphone to instantaneously receive the feedback pattern.</li>
+            </ul>
+            <p>Scenario 8 : User is walking and notices an interesting shop/restaurant/etc.</p>
+            <ul>
+              <li>User takes his smartphone out and click on the “Remember” button
+                <ul>
+                  <li>It is bookmarked</li>
+                </ul>
+              </li>
+              <li>User presses a button on the wearable
+                <ul>
+                  <li>It is bookmarked</li>
+                </ul>
+              </li>
+            </ul>
+            <p>Scenario 9 : User is outside of the polygon formed by his reference points (if more than 2)</p>
+            <ul>
+              <li>If angle formed between 2 closest points is less than reported orientation precision</li>
+              <li>A warning feedback pattern discernable from standard patterns in its properties is conveyed
+                <ul>
+                  <li>User looks at wearable (if it has a display) or to the phone</li>
+                  <li>A dialog box says that the reference points are not significantly separated and that only the nearest point is to be considered.</li>
+                </ul>
+              </li>
+              <li>User acknoledge by pressing “ok” or button on wearable
+                else the to reference points are indicated as usual.</li>
+            </ul>
+            <p>Scenario 10 : User is in a zone here there is no GPS signal</p>
+            <ul>
+              <li>A warning feedback pattern discernable from standard patterns in its properties is conveyed</li>
+              <li>User looks at wearable (if it has a display) or to the phone to assess that he will be no longer receive orientation indications because of GPS signal issues.</li>
+            </ul>
+            <p>Scenario 11 : User is in a zone here there is no Cellular signal</p>
+            <ul>
+              <li>A warning feedback pattern discernable from standard patterns in its properties is conveyed</li>
+              <li>User looks at wearable (if it has a display) or to the phone to assess that he will be no longer receive orientation indications because of Cellular network signal issues.</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (belo), or include individual files as needed -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script>
+$("h1").css("padding-top","60px");
+$("h1").css("margin-top","-60px");
+      </script>
+  </body>
+</html>
