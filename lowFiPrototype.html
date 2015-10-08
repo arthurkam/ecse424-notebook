@@ -1,409 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="vieport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>NavSense | HCI notebook</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vieport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>NavSense | HCI notebook</title>
 
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="notebook.css">
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- ARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-		<style>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="notebook.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- ARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style>
 div.thumbnail    {    text-align: center;
 }
-		</style>
-	</head>
-	<body data-spy="scroll" data-target=".navBox" style="padding-top: 60px; position:relative;" data-offset="10" >
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<a class="navbar-brand" href="#">NavSense</a>
-		</div>
+      </style>
+  </head>
+  <body data-spy="scroll" data-target=".navBox" style="padding-top: 60px; position:relative;" data-offset="10" >
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">NavSense</a>
+    </div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div id="" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul  class="nav navbar-nav" role="tablist">
-				<li class=""><a href="proposal.html">Project Proposal</span></a></li>
-				<li class=""><a href="lowFiPrototype.html">Low Fidelity Prototype</span></a></li>
-			</ul>
-		</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 hidden-sm hidden-xs">
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div  class="navBox" id="" class="">
-						<ul  id="navbar" class="nav nav-pills nav-stacked" role="tablist">
-							<li class=""><a href="#designConcepts">Design Concepts</span></a></li>
-							<li class=""><a href="#prototypes">Prototype</span></a></li>
-							<li class=""><a href="#usability">Usability Goals</span></a></li>
-							<li class=""><a href="#testMaterials">Test Materials</span></a></li>
-							<li class=""><a href="#testResults">Test Results</span></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-10 col-xs-12">
-					<div class="page-header">
-						<h1 style="font-size:3em;">Low Fi Prototype</h1>
-						<a href="User1.m4v">vidya1</a>
-						<a href="User2.m4v">vidya2</a>
-					</div>
-					<div id="designConcepts">
-						<h1>Design Concepts</h1>
-						<p>
-						For this project, our product composes of two different devices. The first one is the wearable device, which our team brainstormed on where would be a good location for the device to located. At the end, the clear winner is using it as a watch, as it is the most accessable and also least obstructive way of wearing the device.
-						<div class="thumbnail" style="">
-							<img style="max-width:500px" src="wearableSketch.png">
-							Wearable Sketch
-						</div>
-						</p>
-						<p>
-						The second device needed is a smartphone application that connects to the wearable device. Our team sketched out several rough ideas for the application UI.
-						<div class="thumbnail" style="">
-							<img style="max-width:400px;display:inline-block" src="uiSketch1.png">
-							<img style="max-width:400px;display:inline-block" src="uiSketch2.jpg">
-							<br>
-							UI Sketches
-						</div>
-						</p>
-						<p>
-						Our team then selected two of our favourite sketches, and created several other screens using the same design concept.
-						<div class="thumbnail" style="">
-							<img style="max-width:500px" src="protoprime1.png">
-							UI Sketch #1
-						</div>
-						<div class="thumbnail" style="">
-							<img style="max-width:500px" src="protoprime2.jpg">
-							UI Sketch #2
-						</div>
-					</div>
-					<div id="prototypes">
-						<h1>Prototypes</h1>
-						<h2>Prototype #1</h2>
-						<h3>Wearable Prototype</h3>
-						<p>
-						The entire functionality of the system relies on the use of vibration to communicate the reference points to the user. For this reason, it was necessary to evaluate the effectiveness of this modality to convey the desired message. Consequently, even during the design of the low-fidelity prototype, the need for an actuating device along with a way to control it was necessary.
-						<br>
-						Note that although this implementation relies on “high” level technology, no code was written by the NavSense team. The mobile application SenseProxy, was provided by Ph.D. candidate Jeffrey Blum and used after receiving his verbal approbation. This application lets the user send custom pattern composed of 3 distinct vibrations of varying amplitude and duration. The device used to render the vibration is a Pebble watch. The watchapp used in order to establish the communication between the Android device and the pebble is named SenseProxy and was acquired and used after receiving verbal approbation from its programmer.
-						<br>
-						During the tests, vibrations were manually sent by an observer by pressing the appropriate button on the mobile application user interface. The feedback was sent when the user was oriented in what the observer estimated to be the appropriate direction. It is important to note that a latency of about a second could be estimated between the time the user pressed the button and the feedback pattern being rendered to the user.
-						</p>
-						<div class="center">
-							<img src="pebble_arm.jpg">
-							<img src="pebble_SP.jpg">
-						</div>
-						<h3>Mobile Device Prototype</h3>
-						<p>
-						<div class="thumbnail" style="float: left; margin-right: 10px">
-							<img src="corey_prototype5.jpg" style="width:200px;"/>
-						</div>
-						<div class="thumbnail" style="float: right; margin-left: 10px">
-							<img src="corey_prototype10.jpg" style="width:200px;"/>
-						</div>
-						Multiple low fidelity prototypes for the NavSense UI were tested. For the user observations, a paper version of the prototype was chosen to simulate the use of the mobile application. To make the paper UI pages feel more realistic, a 3D model of a holder was designed and printed to hold the snapshots. Since we now had a convenient holder for the UI pages, several important design decisions were able to be tested.  During the testing, the user would load the 3D printed holder with all of the UI pages and slide them in/out in order depending on what feature of the application they want to access. 
-						<br>
-						<br>
-						The initial page of the application shows a splash screen which the user can slide upwards to reveal a map. This would simulate the main screen that the user interacts with during the majority of the application use. The intended functionality of this screen is for the user to tap anywhere on the map to add a new reference point. It is meant to be intuitive and similar to other common mobile gps applications.
-						<br>
-						<br>
-						Once a new reference point is added, the user would be brought to a screen that allows them to add a custom name to their location as well as a vibration pattern. The initial paper UI that was designed included a “tap to record” type of vibration customization. This was soon changed to a collection of pre-set patterns after discussion within the NavSense group as well as the test users.
-						<br>
-						<div class="center">
-							<img src="corey_prototype7.jpg">
-							<img src="lowfi_tut.jpg">
-						</div>
-						<br>
-						On a separate page, the user is presented with all of their currently saved reference points. Here they have the option to edit or delete any of these references to make room for new ones. They are also given the option to view any of their “remembered locations” that they saved while using a button on the smartwatch interface. These remembered locations are not saved as reference points but rather points of interest to later be reviewed by the user.
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul  class="nav navbar-nav" role="tablist">
+        <li class=""><a href="proposal.html">Project Proposal</span></a></li>
+        <li class=""><a href="lowFiPrototype.html">Low Fidelity Prototype</span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 hidden-sm hidden-xs">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div  class="navBox" id="" class="">
+            <ul  id="navbar" class="nav nav-pills nav-stacked" role="tablist">
+              <li class=""><a href="#designConcepts">Design Concepts</span></a></li>
+              <li class=""><a href="#prototypes">Prototype</span></a></li>
+              <li class=""><a href="#usability">Usability Goals</span></a></li>
+              <li class=""><a href="#testMaterials">Test Materials</span></a></li>
+              <li class=""><a href="#testResults">Test Results</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-10 col-xs-12">
+          <div class="page-header">
+            <h1 style="font-size:3em;">Low Fi Prototype</h1>
+          </div>
+          <div id="designConcepts">
+            <h1>Design Concepts</h1>
+            <p>
+            For this project, our product composes of two different devices. The first one is the wearable device, which our team brainstormed on where would be a good location for the device to located. At the end, the clear winner is using it as a watch, as it is the most accessable and also the least obstructive way of wearing the device.
+            <div class="thumbnail" style="">
+              <img style="max-width:500px" src="wearableSketch.png">
+              Wearable Sketch
+            </div>
+            </p>
+            <p>
+            The second device needed is a smartphone application that connects to the wearable device. Our team sketched out several rough ideas for the application UI.
+            <div class="thumbnail" style="">
+              <img style="max-width:400px;display:inline-block" src="uiSketch1.png">
+              <img style="max-width:400px;display:inline-block" src="uiSketch2.jpg">
+              <br>
+              Rough UI Sketches
+            </div>
+            </p>
+            <p>
+            Our team then selected two of our favourite sketches, and created several other screens using the same design concept.
+            <div class="thumbnail" style="">
+              <img style="max-width:500px" src="protoprime1.png">
+              UI Sketch #1
+            </div>
+            <div class="thumbnail" style="">
+              <img style="max-width:500px" src="protoprime2.jpg">
+              UI Sketch #2
+            </div>
+          </div>
+          <div id="prototypes">
+            <h1>Prototypes</h1>
+            <h2>Wearable Prototype</h3>
+            <p>
+            The entire functionality of the system relies on the use of vibration to communicate the reference points to the user. For this reason, it was necessary to evaluate the effectiveness of this modality to convey the desired message. Consequently, even during the design of the low-fidelity prototype, the need for an actuating device along with a way to control it was necessary.
+            <br>
+            Note that although this implementation relies on “high” level technology, no code was written by the NavSense team. The mobile application SenseProxy, was provided by Ph.D. candidate Jeffrey Blum and used after receiving his verbal approbation. This application lets the user send custom pattern composed of 3 distinct vibrations of varying amplitude and duration. The device used to render the vibration is a Pebble watch. The watchapp used in order to establish the communication between the Android device and the pebble is named SenseProxy and was acquired and used after receiving verbal approbation from its programmer.
+            <br>
+            During the tests, vibrations were manually sent by an observer by pressing the appropriate button on the mobile application user interface. The feedback was sent when the user was oriented in what the observer estimated to be the appropriate direction. It is important to note that a latency of about a second could be estimated between the time the user pressed the button and the feedback pattern being rendered to the user.
+            </p>
+            <div class="center">
+              <img src="pebble_arm.jpg">
+              <img src="pebble_SP.jpg">
+            </div>
+            <h2>Mobile Prototypes</h2>
+            <h3>Mobile Prototype #1</h3>
+            <p>
+            <div class="thumbnail" style="float: left; margin-right: 10px">
+              <img src="corey_prototype5.jpg" style="width:200px;"/>
+            </div>
+            <div class="thumbnail" style="float: right; margin-left: 10px">
+              <img src="corey_prototype10.jpg" style="width:200px;"/>
+            </div>
+            Multiple low fidelity prototypes for the NavSense UI were tested. For the user observations, a paper version of the prototype was chosen to simulate the use of the mobile application. To make the paper UI pages feel more realistic, a 3D model of a holder was designed and printed to hold the snapshots. Since we now had a convenient holder for the UI pages, several important design decisions were able to be tested.  During the testing, the user would load the 3D printed holder with all of the UI pages and slide them in/out in order depending on what feature of the application they want to access.
+            <br>
+            <br>
+            The initial page of the application shows a splash screen which the user can slide upwards to reveal a map. This would simulate the main screen that the user interacts with during the majority of the application use. The intended functionality of this screen is for the user to tap anywhere on the map to add a new reference point. It is meant to be intuitive and similar to other common mobile gps applications.
+            <br>
+            <br>
+            Once a new reference point is added, the user would be brought to a screen that allows them to add a custom name to their location as well as a vibration pattern. The initial paper UI that was designed included a “tap to record” type of vibration customization. This was soon changed to a collection of pre-set patterns after discussion within the NavSense group as well as the test users.
+            <br>
+            <div class="center">
+              <img src="corey_prototype7.jpg">
+              <img src="lowfi_tut.jpg">
+            </div>
+            <br>
+            On a separate page, the user is presented with all of their currently saved reference points. Here they have the option to edit or delete any of these references to make room for new ones. They are also given the option to view any of their “remembered locations” that they saved while using a button on the smartwatch interface. These remembered locations are not saved as reference points but rather points of interest to later be reviewed by the user.
 
-						<div class="center">
-							<img src="corey_prototype8.1.jpeg">
-							<img src="corey_prototype8.2.jpg">
-						</div>
-						If a user tries to add a new reference point but they already have too many, a notification will appear and allow them to quickly replace one of their old references with the new one that they are trying to add. 
-						<div class="center">
-							<img src="corey_prototype8.3.jpeg">
-						</div>
-						After testing this prototype with users and NavSense team members, multiple changes were decided upon that would improve the usability of the design. These changes include slight modifications to the “new reference point” page and perhaps a consolidation of the location Menu into the main map screen. 
-						<br>
-						Although the UI for the Pebble smartwatch application was thoroughly discussed, it will mainly be used to display very minimal information to the user. Since the display size is very small, it isn’t worth trying to clutter the screen. Very basic UI pages were tested such as the ones in the photos below. One screen shows the “No GPS signal”, one shows the direction of a reference point called “Home” and the third one shows the visual feedback associated with pressing the “remember location” button on the watch.
+            <div class="center">
+              <img src="corey_prototype8.1.jpeg">
+              <img src="corey_prototype8.2.jpg">
+            </div>
+            If a user tries to add a new reference point but they already have too many, a notification will appear and allow them to quickly replace one of their old references with the new one that they are trying to add.
+            <div class="center">
+              <img src="corey_prototype8.3.jpeg">
+            </div>
+            After testing this prototype with users and NavSense team members, multiple changes were decided upon that would improve the usability of the design. These changes include slight modifications to the “new reference point” page and perhaps a consolidation of the location Menu into the main map screen.
+            <br>
+            Although the UI for the Pebble smartwatch application was thoroughly discussed, it will mainly be used to display very minimal information to the user. Since the display size is very small, it isn’t worth trying to clutter the screen. Very basic UI pages were tested such as the ones in the photos below. One screen shows the “No GPS signal”, one shows the direction of a reference point called “Home” and the third one shows the visual feedback associated with pressing the “remember location” button on the watch.
 
-						<div class="center">
-							<img src="corey_prototype12.jpg">
-							<img src="corey_prototype13.jpg">
-							<img src="corey_prototype14.jpg">
-						</div>
-						</p>
-					</div>
-					<div id="usability">
-						<h1>Usability Goals and Benchmark Tasks</h1>
-						<p class="c7 c15"><span>The following section describes how usability testing was achieved. Details concerning the different tasks are presented as well as their usability goals and their evaluation criteria. Experimental results are then presented and synthesized.</span></p>
-						<p class="c7 c1 c15"><span></span></p>
-						<h2>
-							<ol class="c6 lst-kix_2eq8zfekp1z7-0 start" start="1">
-								<li class="c3"><span class="c10">The tasks</span></li>
-								<ol class="c6 lst-kix_2eq8zfekp1z7-1 start" type="a">
-									<h3><li class="c4"><span class="c10">Start the application and follow the tutorial</span></li></h3>
-								</ol>
+            <div class="center">
+              <img src="corey_prototype12.jpg">
+              <img src="corey_prototype13.jpg">
+              <img src="corey_prototype14.jpg">
+            </div>
+            </p>
+          </div>
+          <h3>Mobile Prototype #2</h3>
+          <p>
+          Our second low fidelity prototype was based on hand drawn images loaded on an android app called Prototyping on Paper. The android app allows transition between images, representing different User Interface (UI) states, by making certain area of the images clickable. In other words, if the user testing the prototype clicks at a certain location on the image, as he naturally would using any other app, a new image would be loaded. This allows for a more natural and fast prototype testing experience.
+          <br>
+          <div class="center">
+            <img src="ui3.jpg">
+          </div>
+          <br>
+          Each image represents a UI state. Initially the user is presented with two tabs. The List tab displays a list of all his reference points as well as his distance and direction to that point. The Map tab displays his current location on the map with all his reference points. A plus button, on the bottom right, allows the user to add new reference points. A setting button, on the bottom left, allows the user to set global settings such as notification mode (Audio or Vibration or both). If the user clicks on the plus button the user can then set the new reference point’s location and name it. The new reference point will appear in the list and on the map. He can then edit, delete and enable/disable that reference point.
+          <br>
+          Our prototype can be accessed on either a smartphone or web browser. Ours can be accessed at the following link: <a href="https://popapp.in/projects/561405cc4cd6f39135e85207/preview">https://popapp.in/projects/561405cc4cd6f39135e85207/preview</a>.
+          </p>
+          <div id="usability">
+            <h1>Usability Goals and Benchmark Tasks</h1>
+            <p class="c7 c15"><span>The following section describes how usability testing was achieved. Details concerning the different tasks are presented as well as their usability goals and their evaluation criteria. Experimental results are then presented and synthesized.</span></p>
+            <p class="c7 c1 c15"><span></span></p>
+            <h2>
+              <ol class="c6 lst-kix_2eq8zfekp1z7-0 start" start="1">
+                <li class="c3"><span class="c10">The Benchmark Tasks and Usability Goals</span></li>
+                <ol class="c6 lst-kix_2eq8zfekp1z7-1 start" type="a">
+                  <h3><li class="c4"><span class="c10">Start the application and follow the tutorial</span></li></h3>
+                </ol>
 
-							</ol></h2>
-							<p class="c7 c18"><span>A brief tutorial is available through the UI and has to be followed in order to learn the functions of the system. During this task, the user is provided with step by step instructions on how to set a new reference point, how to edit and delete reference points.</span></p>
-							<p class="c7 c1 c9"><span></span></p>
-							<p class="c7"><span>Usability Goals : </span></p>
-							<ul class="c6 lst-kix_u0bbtabd9cgn-0 start">
-								<li class="c3"><span>Introduce the user to the system (easy to learn)</span></li>
-								<li class="c3"><span>See potential manipulations errors while adding/editing/deleting reference points &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and navigating through the windows (Error tolerance)</span></li>
-							</ul>
-							<p class="c7"><span>Quantitative aspect :</span></p>
-							<p class="c7 c1"><span></span></p>
-							<ul class="c6 lst-kix_gqc6xp3xcha9-0 start">
-								<li class="c3"><span>How many “false” clicks happened ? (user trying to interact with non-interactive elements)</span></li>
-								<li class="c3"><span>How many times does the user have to go back because he made a mistake ?</span></li>
-								<li class="c3"><span>How many questions did the user have to ask to accomplish his task ?</span></li>
-							</ul>
-							<p class="c7 c1"><span></span></p>
-							<p class="c7 c1"><span></span></p>
-							<h3><ol class="" start="">
-									<ol class="c6 lst-kix_2eq8zfekp1z7-1" start="2" type="a">
-										<li class="c4"><span class="c10">In what direction is the reference point that was entered ?</span></li>
-									</ol>
-								</ol></h3>
-								<p class="c7 c1 c9"><span class="c10"></span></p>
-								<p class="c7"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After the completion of the tutorial, the user is asked to simulate being in an unfamiliar environment by closing his eyes. He should then use feedback previously selected to indicate the direction of the selected point of reference.</span></p>
-								<p class="c7 c1 c9"><span></span></p>
-								<p class="c7"><span>Usability Goals :</span></p>
-								<ul class="c6 lst-kix_vi0168vch929-0 start">
-									<li class="c3"><span>Evaluatie the use of vibration feedback as a communication modality (Effectiveness) </span></li>
-									<li class="c3"><span>Validate reference point’s association with vibration pattern (Effectiveness)</span></li>
-								</ul>
-								<p class="c7 c1 c9"><span></span></p>
-								<p class="c7"><span>Quantitative aspect :</span></p>
-								<p class="c7 c1 c9"><span></span></p>
-								<ul class="c6 lst-kix_q8e1bh8zhw4j-0 start">
-									<li class="c3"><span>How many false positive vibrations were detected ? (user felt something but there was actually nothing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-									<li class="c3"><span>How many vibration patterns were missed by the user ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-									<li class="c3"><span>Did the user point in the right direction ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-									<li class="c3"><span>How far was his indication from the truth ?</span></li>
-								</ul>
-								<h3><ol>
-										<ol class="c6 lst-kix_2eq8zfekp1z7-1" start="3" type="a">
-											<li class="c4"><span class="c10">Point to a location (asked by the observers) in relation to the reference points set by the user.</span></li>
-										</ol>
-									</ol></h3>
-									<p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-									<p class="c7"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The users were asked describe where the McGill bookstore was. However, they had their eyes closed and could only rely on the knowledge they already had about the position of their previously set reference points.</span></p>
-									<p class="c7 c1"><span></span></p>
-									<p class="c7"><span>Goals :</span></p>
-									<ul class="c6 lst-kix_8lqwc2rnsleb-0 start">
-										<li class="c3"><span>Evaluate user’s ability to differentiate between two feedback patterns (Effectiveness)</span></li>
-									</ul>
-									<p class="c7 c1"><span></span></p>
-									<p class="c7"><span>Quantitative aspect :</span></p>
-									<p class="c7 c1"><span></span></p>
-									<ul class="c6 lst-kix_u71scsy32tkb-0 start">
-										<li class="c3"><span>How many times did the user perceive one of the vibration patterns as the other ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-										<li class="c3"><span>Did the user point in the right direction ?</span></li>
-										<li class="c3"><span>How far was his indication from the truth ?</span></li>
-									</ul>
-									<p class="c7 c1"><span></span></p>
-									<ol class="c6 lst-kix_2eq8zfekp1z7-0" start="2">
-										<h2><li class="c3"><span class="c10">User testing context</span></li></h2>
-									</ol>
-									<p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>All of the experiments have been conducted at the center of McGill University downtown Campus at a location known by the students as the Y intersection. This location was chosen because all of our test subjects were most comfortable meeting there. Being at the center of campus, a lot of potential location (buildings) are available and easily recognized and located. The tests were conducted over a period of an hour and 20 minutes and ranged from 15 to 20 minutes per participants on Tuesday October 6th. The participants accepted to participate in the low-fidelity prototype testing phase on a voluntary basis. When explicitly asked, they gave verbal consent to being filmed for our tests. No monetary compensation was offered to the participants.</span></p>
-									<p class="c7 c1"><span class="c10"></span></p>
-									<ol class="c6 lst-kix_2eq8zfekp1z7-0" start="3">
-										<h2><li class="c3"><span class="c10">Participants</span></li></h2>
-									</ol>
-									<p class="c5"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Three subjects participated in the testing of the low-fidelity prototypes. They all belonged in the 20-24 age group, owned a smartphone and no wearable devices. However, one of them reported to be using an electronic activity tracker (fitbit). Their self-assessed general sense of orientation ranged from 2 to 6 (average = 3.67) on a 7 point likert scale. Their self assessed general smartphone skills was high with a value of 5 out of 7 and they were heavy smartphone users (average 6.33/7). Amongst the user group, two users out of three were males and 1 user was a female.</span></p>
-					</div>
-					<div id="testMaterials">
-						<h1>Test Materials</h1>
-						<p>Please click on the images to read the content</p>
+              </ol></h2>
+              <p class="c7 c18"><span>A brief tutorial is available through the UI and has to be followed in order to learn the functions of the system. During this task, the user is provided with step by step instructions on how to set a new reference point, how to edit and delete reference points.</span></p>
+              <p class="c7 c1 c9"><span></span></p>
+              <p class="c7"><span>Usability Goals : </span></p>
+              <ul class="c6 lst-kix_u0bbtabd9cgn-0 start">
+                <li class="c3"><span>Introduce the user to the system (easy to learn)</span></li>
+                <li class="c3"><span>See potential manipulations errors while adding/editing/deleting reference points &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and navigating through the windows (Error tolerance)</span></li>
+              </ul>
+              <p class="c7"><span>Quantitative aspect :</span></p>
+              <p class="c7 c1"><span></span></p>
+              <ul class="c6 lst-kix_gqc6xp3xcha9-0 start">
+                <li class="c3"><span>How many “false” clicks happened ? (user trying to interact with non-interactive elements)</span></li>
+                <li class="c3"><span>How many times does the user have to go back because he made a mistake ?</span></li>
+                <li class="c3"><span>How many questions did the user have to ask to accomplish his task ?</span></li>
+              </ul>
+              <p class="c7 c1"><span></span></p>
+              <p class="c7 c1"><span></span></p>
+              <h3><ol class="" start="">
+                  <ol class="c6 lst-kix_2eq8zfekp1z7-1" start="2" type="a">
+                    <li class="c4"><span class="c10">In what direction is the reference point that was entered ?</span></li>
+                  </ol>
+                </ol></h3>
+                <p class="c7 c1 c9"><span class="c10"></span></p>
+                <p class="c7"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After the completion of the tutorial, the user is asked to simulate being in an unfamiliar environment by closing his eyes. He should then use feedback previously selected to indicate the direction of the selected point of reference.</span></p>
+                <p class="c7 c1 c9"><span></span></p>
+                <p class="c7"><span>Usability Goals :</span></p>
+                <ul class="c6 lst-kix_vi0168vch929-0 start">
+                  <li class="c3"><span>Evaluatie the use of vibration feedback as a communication modality (Effectiveness) </span></li>
+                  <li class="c3"><span>Validate reference point’s association with vibration pattern (Effectiveness)</span></li>
+                </ul>
+                <p class="c7 c1 c9"><span></span></p>
+                <p class="c7"><span>Quantitative aspect :</span></p>
+                <p class="c7 c1 c9"><span></span></p>
+                <ul class="c6 lst-kix_q8e1bh8zhw4j-0 start">
+                  <li class="c3"><span>How many false positive vibrations were detected ? (user felt something but there was actually nothing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                  <li class="c3"><span>How many vibration patterns were missed by the user ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                  <li class="c3"><span>Did the user point in the right direction ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                  <li class="c3"><span>How far was his indication from the truth ?</span></li>
+                </ul>
+                <h3><ol>
+                    <ol class="c6 lst-kix_2eq8zfekp1z7-1" start="3" type="a">
+                      <li class="c4"><span class="c10">Point to a location (asked by the observers) in relation to the reference points set by the user.</span></li>
+                    </ol>
+                  </ol></h3>
+                  <p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+                  <p class="c7"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The users were asked describe where the McGill bookstore was. However, they had their eyes closed and could only rely on the knowledge they already had about the position of their previously set reference points.</span></p>
+                  <p class="c7 c1"><span></span></p>
+                  <p class="c7"><span>Goals :</span></p>
+                  <ul class="c6 lst-kix_8lqwc2rnsleb-0 start">
+                    <li class="c3"><span>Evaluate user’s ability to differentiate between two feedback patterns (Effectiveness)</span></li>
+                  </ul>
+                  <p class="c7 c1"><span></span></p>
+                  <p class="c7"><span>Quantitative aspect :</span></p>
+                  <p class="c7 c1"><span></span></p>
+                  <ul class="c6 lst-kix_u71scsy32tkb-0 start">
+                    <li class="c3"><span>How many times did the user perceive one of the vibration patterns as the other ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                    <li class="c3"><span>Did the user point in the right direction ?</span></li>
+                    <li class="c3"><span>How far was his indication from the truth ?</span></li>
+                  </ul>
+                  <p class="c7 c1"><span></span></p>
+                  <ol class="c6 lst-kix_2eq8zfekp1z7-0" start="2">
+                    <h2><li class="c3"><span class="c10">User testing context</span></li></h2>
+                  </ol>
+                  <p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>All of the experiments have been conducted at the center of McGill University downtown Campus at a location known by the students as the Y intersection. This location was chosen because all of our test subjects were most comfortable meeting there. Being at the center of campus, a lot of potential location (buildings) are available and easily recognized and located. The tests were conducted over a period of an hour and 20 minutes and ranged from 15 to 20 minutes per participants on Tuesday October 6th. The participants accepted to participate in the low-fidelity prototype testing phase on a voluntary basis. When explicitly asked, they gave verbal consent to being filmed for our tests. No monetary compensation was offered to the participants.</span></p>
+                  <p class="c7 c1"><span class="c10"></span></p>
+                  <ol class="c6 lst-kix_2eq8zfekp1z7-0" start="3">
+                    <h2><li class="c3"><span class="c10">Participants</span></li></h2>
+                  </ol>
+                  <p class="c5"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Three subjects participated in the testing of the low-fidelity prototypes. They all belonged in the 20-24 age group, owned a smartphone and no wearable devices. However, one of them reported to be using an electronic activity tracker (fitbit). Their self-assessed general sense of orientation ranged from 2 to 6 (average = 3.67) on a 7 point likert scale. Their self assessed general smartphone skills was high with a value of 5 out of 7 and they were heavy smartphone users (average 6.33/7). Amongst the user group, two users out of three were males and 1 user was a female.</span></p>
+          </div>
+          <div id="testMaterials">
+            <h1>Test Materials</h1>
+            <p>Please click on the images to read the content</p>
             <br><a href="pretest.html" target="_blank">
-						<div style="float:left" class="thumbnail" style="">
-							<img style="max-height:300px" src="preTestQuestionnaire.jpg">
-							Pre-Test Questionnaire
-						</div>
+              <div style="float:left" class="thumbnail" style="">
+                <img style="max-height:300px" src="preTestQuestionnaire.jpg">
+                Pre-Test Questionnaire
+              </div>
             </a>
             <a href="posttest.html" target="_blank">
-						<div style="float:left" class="thumbnail" style="">
-							<img style="max-height:300px" src="postTestQuestionnaire1.png">
-							Post-Test Questionnaire
-						</div>
+              <div style="float:left" class="thumbnail" style="">
+                <img style="max-height:300px" src="postTestQuestionnaire1.png">
+                Post-Test Questionnaire
+              </div>
             </a>
             <a href="tutorial.html" target="_blank">
-						<div style="float:left" class="thumbnail" style="">
-							<img style="max-height:300px" src="protoTut1.png">
-							Tutorial
-						</div>
-					</div>
-          </a>
-					<p class="clear"></p>
-					<div id="testResults">
-						<h1>Summary of Test Results</h1>
-						<ol class="c6 lst-kix_2eq8zfekp1z7-0" start="4">
-							<ol class="c6 lst-kix_2eq8zfekp1z7-1" start="1" type="a">
-								<h3><li class="c4"><span class="c10" >Start the application and follow the tutorial</span></li></h3>
-							</ol>
-						</ol>
-						<p class="c7 c1 c9"><span></span></p>
-						<a href="#" name="a3f7fb731f8b29df0e0512121e6e2e6cb3ea7735"></a><a href="#" name="0"></a>
-						<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0" class="c13 c9">
-							<tbody>
-								<tr class="c17">
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c2">Usability Goal</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c2">Evaluation</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c2">Results (all users)</span></p>
-									</td>
-								</tr>
-								<tr class="c14">
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c8">Ease of use</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c8">How many “false” clicks happened ?</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c8">A total of 4 clicks trying to interact with non interactive objects were noted.</span></p>
-									</td>
-								</tr>
-								<tr class="c14">
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c8">Error tolerance</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c8">How many times did the user have to go back because he made a mistake ?</span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0"><span class="c8">How many questions did the user have to ask to accomplish his task ?</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c8">At 1 time, the user entered the point editing menu without needing it and had to return using the cancel button.</span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0"><span class="c8">No questions were asked during this task.</span></p>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<p class="c7 c1"><span class="c10"></span></p>
-						<p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Conclusions :</b> </span><span>From these observations and results, some key points to correct for the next design iteration were identified. One of the most urgent corrections is the point editing window that was too cluttered on the paper prototype. Also, the way to switch between tutorial pages was not clear to some users so it should be properly outlined. </span></p>
-						<p class="c7 c1"><span></span></p>
-						<ol>
-							<ol class="c6 lst-kix_2eq8zfekp1z7-1" start="2" type="a">
-								<h3> <li class="c4"><span class="c10">In what direction is the reference point that was entered ?</span></li></h3>
-							</ol>
-						</ol>
-						<p class="c7 c1 c9"><span></span></p>
-						<a href="#" name="3b9639111770c5981635179ff295ef022d48cb46"></a><a href="#" name="1"></a>
-						<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0" class="c13 c9">
-							<tbody>
-								<tr class="c17">
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c2">Usability Goal</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c2">Evaluation</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c2">Results (all users)</span></p>
-									</td>
-								</tr>
-								<tr class="c14">
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c8">Effectiveness</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c8">How many false positive vibrations were detected ?</span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0"><span class="c8">How many vibration patterns were missed by the user ?</span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0"><span class="c8">Did the user point in the right general direction ?</span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0"><span class="c8">How far was his indication from the truth ?</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c8">No false positive occurred during the testing with the 3 participants</span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0"><span class="c8">A single vibration pattern was missed during the testing of the system.</span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0"><span class="c8">Every user indicated the right general direction.</span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0"><span class="c8">Estimated error in the direction varies from 10 to 20 ± 15°.</span></p>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<p class="c7 c1"><span class="c10"></span></p>
-						<p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Conclusions :</b> </span><span>These results demonstrate the effectiveness of using vibration as the feedback modality. At no point the users detected vibration when there was none. The vibration pattern that was missed was due to an error from the “wizard of oz” responsible from delivering the vibration using the mobile interface. This task also proves the effectiveness of the system in delivering vibration based orientation information to the user. Since it was low fidelity prototyping, users pointed out that the latency between them being in the right orientation and actually receiving the signal was a nuisance. A key point also identified is that the feedback patterns should be pre-set and the user should choose amongst the most easily differentiable ones to HIM/HER. The option to register a tapping pattern will probably be discarded because it proved to be confusing to the user. In summary, simpler is better.</span></p>
-						<ol>
-							<ol class="c6 lst-kix_2eq8zfekp1z7-1" start="3" type="a">
-								<h3><li class="c4"><span class="c10">In what direction is a known location located by using already entered location references ?</span></li></h3>
-							</ol>
-						</ol>
-						<p class="c7 c1 c9"><span></span></p>
-						<a href="#" name="d6851e645586467d3bf6a50f791f9f1863a74727"></a><a href="#" name="2"></a>
-						<table class="table table-striped table-bordered" cellpadding="0" cellspacing="0" class="c9 c13">
-							<tbody>
-								<tr class="c17">
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c2">Usability Goal</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c2">Evaluation</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c2">Results (all users)</span></p>
-									</td>
-								</tr>
-								<tr class="c14">
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c8">Effectiveness</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c8">How many times did the user perceive one vibrating pattern as the other ?</span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0"><span class="c8">Did the user point in the right general direction ?</span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0"><span class="c8">How far was his indication from the truth ?</span></p>
-									</td>
-									<td class="c11" colspan="1" rowspan="1">
-										<p class="c0"><span class="c8">At no time during the testing phase, the user perceived one vibration pattern as the other. </span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0"><span class="c8">All of the users pointed in the right general direction.</span></p>
-										<p class="c0 c1"><span class="c8"></span></p>
-										<p class="c0"><span class="c8">The estimated error from the users varied from 15 to 20 ± 15°</span></p>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<p class="c7 c1"><span class="c10"></span></p>
-						<p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Conclusions :</b> </span><span>Since it was low-fidelity prototyping, the two patterns available were either 2 long pulses (1 s vibration, 300 ms break, 1 s vibration) or 3 long pulses (1 s vibration, 300 ms break, 1 s vibration, 300 ms break, 1 s vibration). Consequently, the difference between these two was quite easy to feel for the users. In this task, the users were able to properly locate a point not entered in their reference points by first obtaining their approximate orientation and location from their two known reference points. The error was higher than in task b but it may be due to observers estimation. A key factor in this task, as pointed out by users, is to make sure the different patterns are easily differentiable. Users indicated that since the patterns was not completely chosen by them, the association was harder to memorize. One of them admitted that after few more minutes of use, it would have become easier. &nbsp;In this order of idea, for the next iteration, care should be taken to ensure every proposed pattern is unique. </span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<!-- Include all compiled plugins (belo), or include individual files as needed -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script>
+              <div style="float:left" class="thumbnail" style="">
+                <img style="max-height:300px" src="protoTut1.png">
+                Tutorial
+              </div>
+            </a>
+            <a href="dataCollection.html" target="_blank">
+              <div style="float:left" class="thumbnail" style="">
+                <img style="max-width:300px;max-height:300px" src="dataCollection.png">
+                Data Collection Sheet
+              </div>
+            </a>
+          </div>
+            <p class="clear"></p>
+            <div id="testResults">
+              <h1>Summary of Test Results</h1>
+              The tests went smoothly, and our group have collected data from it. Clips of the test can be viewed here: <a href="User1.m4v">Video 1 <span class="glyphicon glyphicon-film" aria-hidden="true"></span></a>, <a href="User2.m4v">Video 2 <span class="glyphicon glyphicon-film" aria-hidden="true"></span></a>. Using the results, we have drawn several useful conclusions.
+              <ol class="c6 lst-kix_2eq8zfekp1z7-0" start="4">
+                <ol class="c6 lst-kix_2eq8zfekp1z7-1" start="1" type="a">
+                  <h3><li class="c4"><span class="c10" >Start the application and follow the tutorial</span></li></h3>
+                </ol>
+              </ol>
+              <p class="c7 c1 c9"><span></span></p>
+              <a href="#" name="a3f7fb731f8b29df0e0512121e6e2e6cb3ea7735"></a><a href="#" name="0"></a>
+              <table class="table table-striped table-bordered" cellpadding="0" cellspacing="0" class="c13 c9">
+                <tbody>
+                  <tr class="c17">
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c2">Usability Goal</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c2">Evaluation</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c2">Results (all users)</span></p>
+                    </td>
+                  </tr>
+                  <tr class="c14">
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c8">Ease of use</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c8">How many “false” clicks happened ?</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c8">A total of 4 clicks trying to interact with non interactive objects were noted.</span></p>
+                    </td>
+                  </tr>
+                  <tr class="c14">
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c8">Error tolerance</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c8">How many times did the user have to go back because he made a mistake ?</span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0"><span class="c8">How many questions did the user have to ask to accomplish his task ?</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c8">At 1 time, the user entered the point editing menu without needing it and had to return using the cancel button.</span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0"><span class="c8">No questions were asked during this task.</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c7 c1"><span class="c10"></span></p>
+              <p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Conclusions :</b> </span><span>From these observations and results, some key points to correct for the next design iteration were identified. One of the most urgent corrections is the point editing window that was too cluttered on the paper prototype. Also, the way to switch between tutorial pages was not clear to some users so it should be properly outlined. </span></p>
+              <p class="c7 c1"><span></span></p>
+              <ol>
+                <ol class="c6 lst-kix_2eq8zfekp1z7-1" start="2" type="a">
+                  <h3> <li class="c4"><span class="c10">In what direction is the reference point that was entered ?</span></li></h3>
+                </ol>
+              </ol>
+              <p class="c7 c1 c9"><span></span></p>
+              <a href="#" name="3b9639111770c5981635179ff295ef022d48cb46"></a><a href="#" name="1"></a>
+              <table class="table table-striped table-bordered" cellpadding="0" cellspacing="0" class="c13 c9">
+                <tbody>
+                  <tr class="c17">
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c2">Usability Goal</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c2">Evaluation</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c2">Results (all users)</span></p>
+                    </td>
+                  </tr>
+                  <tr class="c14">
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c8">Effectiveness</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c8">How many false positive vibrations were detected ?</span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0"><span class="c8">How many vibration patterns were missed by the user ?</span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0"><span class="c8">Did the user point in the right general direction ?</span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0"><span class="c8">How far was his indication from the truth ?</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c8">No false positive occurred during the testing with the 3 participants</span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0"><span class="c8">A single vibration pattern was missed during the testing of the system.</span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0"><span class="c8">Every user indicated the right general direction.</span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0"><span class="c8">Estimated error in the direction varies from 10 to 20 ± 15°.</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c7 c1"><span class="c10"></span></p>
+              <p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Conclusions :</b> </span><span>These results demonstrate the effectiveness of using vibration as the feedback modality. At no point the users detected vibration when there was none. The vibration pattern that was missed was due to an error from the “wizard of oz” responsible from delivering the vibration using the mobile interface. This task also proves the effectiveness of the system in delivering vibration based orientation information to the user. Since it was low fidelity prototyping, users pointed out that the latency between them being in the right orientation and actually receiving the signal was a nuisance. A key point also identified is that the feedback patterns should be pre-set and the user should choose amongst the most easily differentiable ones to HIM/HER. The option to register a tapping pattern will probably be discarded because it proved to be confusing to the user. In summary, simpler is better.</span></p>
+              <ol>
+                <ol class="c6 lst-kix_2eq8zfekp1z7-1" start="3" type="a">
+                  <h3><li class="c4"><span class="c10">In what direction is a known location located by using already entered location references ?</span></li></h3>
+                </ol>
+              </ol>
+              <p class="c7 c1 c9"><span></span></p>
+              <a href="#" name="d6851e645586467d3bf6a50f791f9f1863a74727"></a><a href="#" name="2"></a>
+              <table class="table table-striped table-bordered" cellpadding="0" cellspacing="0" class="c9 c13">
+                <tbody>
+                  <tr class="c17">
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c2">Usability Goal</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c2">Evaluation</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c2">Results (all users)</span></p>
+                    </td>
+                  </tr>
+                  <tr class="c14">
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c8">Effectiveness</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c8">How many times did the user perceive one vibrating pattern as the other ?</span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0"><span class="c8">Did the user point in the right general direction ?</span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0"><span class="c8">How far was his indication from the truth ?</span></p>
+                    </td>
+                    <td class="c11" colspan="1" rowspan="1">
+                      <p class="c0"><span class="c8">At no time during the testing phase, the user perceived one vibration pattern as the other. </span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0"><span class="c8">All of the users pointed in the right general direction.</span></p>
+                      <p class="c0 c1"><span class="c8"></span></p>
+                      <p class="c0"><span class="c8">The estimated error from the users varied from 15 to 20 ± 15°</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="c7 c1"><span class="c10"></span></p>
+              <p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Conclusions :</b> </span><span>Since it was low-fidelity prototyping, the two patterns available were either 2 long pulses (1 s vibration, 300 ms break, 1 s vibration) or 3 long pulses (1 s vibration, 300 ms break, 1 s vibration, 300 ms break, 1 s vibration). Consequently, the difference between these two was quite easy to feel for the users. In this task, the users were able to properly locate a point not entered in their reference points by first obtaining their approximate orientation and location from their two known reference points. The error was higher than in task b but it may be due to observers estimation. A key factor in this task, as pointed out by users, is to make sure the different patterns are easily differentiable. Users indicated that since the patterns was not completely chosen by them, the association was harder to memorize. One of them admitted that after few more minutes of use, it would have become easier. &nbsp;In this order of idea, for the next iteration, care should be taken to ensure every proposed pattern is unique. </span></p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (belo), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
 $("h1").css("padding-top","60px");
 $("h1").css("margin-top","-60px");
-		</script>
-	</body>
+    </script>
+  </body>
 </html>
