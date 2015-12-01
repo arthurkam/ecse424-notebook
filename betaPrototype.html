@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vieport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>NavSense | HCI notebook</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="notebook.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- ARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style>
+div.thumbnail    {    text-align: center;
+}
+      </style>
+  </head>
+  <body data-spy="scroll" data-target=".navBox" style="padding-top: 60px; position:relative;" data-offset="10" >
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">NavSense</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul  class="nav navbar-nav" role="tablist">
+        <li class=""><a href="proposal.html">Project Proposal</span></a></li>
+        <li class=""><a href="lowFiPrototype.html">Low Fidelity Prototype</span></a></li>
+        <li class=""><a href="computerPrototype.html">Computer Prototype</span></a></li>
+        <li class=""><a href="formativeFeedback.html">Formative Feedback</span></a></li>
+        <li class=""><a href="alphaPrototype.html">Alpha Prototype</span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 hidden-sm hidden-xs">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div  class="navBox" id="" class="">
+            <ul  id="navbar" class="nav nav-pills nav-stacked" role="tablist">
+              <li class=""><a href=""></a></li>
+              <li class=""><a href=""></a></li>
+              <li class=""><a href=""></a></li>
+
+              <li class=""><a href=""></a></li>
+              <li class=""><a href=""></a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-10 col-xs-12">
+          <div class="page-header">
+            <h1 style="font-size:3em;">Beta Prototype</h1>
+          </div>
+          <div class="">
+            <h1>Design Evolution</h1>
+            <ol><li>If two locations are too close together, their vibration patterns could be mixed together</li></ol>
+
+
+<p class=normal style='line-height:137%'>Comment from formative feedback: When
+two reference points are too close to one another, the vibration signals would
+get confusing because they would be overlapping. <br>
+<br>
+Although this situation was impossible in the context of the formative feedback
+because the points to be entered were 'forced' to have comparable results, <span
+class=GramE>this issue was pointed out by the team</span>. This is nevertheless
+a serious issue and to make sure that this situation does not cause problems to
+the user, <span class=SpellE>NavSense</span> implemented a function that
+verifies if two or more points are within a 20° range. If this is the case, the
+distance is used to set a priority and the nearest reference point is the one
+that is rendered to the user. However, if you are within 70m
+of the first point, you will get the farthest one because the system assumes
+you know where the closest one is. This feature definitely increases the <b
+style='mso-bidi-font-weight:normal'>effectiveness</b> of the system by making
+sure that no vibration <b style='mso-bidi-font-weight:normal'>feedback</b>
+masks the other and consequently, that the appropriate message is rendered to
+the user. Furthermore, by removing possible signal masking, the <b
+style='mso-bidi-font-weight:normal'>reliability</b> of the system is greatly
+enhanced. Having two reference points right next to each other would be
+redundant, and it only hinders the user experience by recognizing both of them
+individually. Because of this, the team made the decision to prioritize
+distance as the deciding factor since choosing the closest point reduces the
+effects of the angle error on the user's orientation capabilities.</p>
+<ol start=2><li>Main menu content modification</li></ol>
+
+<p class=normal style='line-height:137%'>
+The main menu (top right of the screen) in the Android GUI used to contain
+elements that <span class=GramE>were</span> not relevant to the user (i.e. stop
+<span class=SpellE>NavSense</span> Service, a not-working about section, etc.).
+We received a comment from non-official user testing who was testing the GUI
+that this section would need work to make it 'less scary'. He did not know what
+a service was and therefore proved that this element did not have its place
+there. The <span class=SpellE>NavSense</span> team decided to rework the menu
+content to limit it to the following three elements {'Install Pebble', 'User
+Guide', 'About'}. The control over the <span class=SpellE>NavSense</span>
+Service was removed from the user and it is assumed that a user who knows
+enough to want to control this aspect of the app will know another approach to
+achieving this effect. By performing these changes, the menu is made to be more
+<b style='mso-bidi-font-weight:normal'>aesthetically pleasing and minimalistic</b>.
+This is because the menu no longer presents elements that are rarely used and
+presents terms that the user is familiar with.</p>
+
+<p class=normal style='line-height:137%'>This modification also added the user
+guide, which was unavailable from the app, in the menu therefore increasing
+user's access to information about the app in a simple and efficient way (<b
+style='mso-bidi-font-weight:normal'>Help and Documentation</b>).
+<ol start=3><li>Modifying GUI to align with Material Design standards
+for Android</ol></li>
+
+<p class=normal style='line-height:137%'>
+Based on comments gathered with a user casually navigating the GUI, the buttons
+and interface elements using grey-scale did not match with the rest of the <span
+class=GramE>menus which</span> were based on the Android Material Design
+approach. In an effort to increase <b style='mso-bidi-font-weight:normal'>consistency</b>
+within android applications, a standard color scheme was implemented for the
+buttons and menus. It is hypothesized that the color coding of the button,
+without taking away <b style='mso-bidi-font-weight:normal'>accessibility</b>
+associated with the words and symbols, increase the <b style='mso-bidi-font-weight:
+normal'>efficiency</b> of the application to non-visually impaired users by
+allowing a color-based discrimination of the button's effect (<span
+class=SpellE>i.e</span> 'Add a point' is now blue instead of white (increase
+saliency), done is blue, cancel is red, edit is blue, delete is red).
+<ol start=4><li>Added Pebble detection at application</li></ol>
+
+<p class=normal style='line-height:137%'>
+The team from the formative back mentioned that it was not totally obvious that
+a Pebble had to be used with the Android application. Therefore, in an effort
+to <b style='mso-bidi-font-weight:normal'>prevent errors</b> arising from such
+a situation, <span class=SpellE>NavSense</span> added a screen that appears
+when the application is started without a Pebble watch mentioning that the app
+will not function without the appropriate hardware element. A checkbox was
+added to allow the user to not be reminded of this fact the next time he starts
+the app without his watch paired to the phone. This element increase the <b
+style='mso-bidi-font-weight:normal'>matching between system and the real world</b>
+by using terms from a common register that the user is familiar and at the same
+time, informs the user of the <b style='mso-bidi-font-weight:normal'>system
+status</b>.</p>
+<br>
+<p><u><b>About the changes presented above</u></b></p>
+<p>NavSense realizes that the modification presented above have not been usability tested because of feasibility reasons (limited amount of time allotted to the project in the end of the semester). Therefore note that their effects on system usability are hypothesized and not ground truth.</p>
+          </div>
+          <div>
+          <h1>Prototype Revisions</h1>
+          <p>
+          The current state of the NavSense beta prototype is at a point where we can say that we have met all of the initial goals set in the project proposal. We wanted to create a system using a wearable interface that allows users to orient themselves in an unfamiliar environment. This work was inspired by the birds and turtles’ abilities to use the magnetic field of the earth to orient themselves. The NavSense platform allows users to orient themselves in relation to reference points that they set on a mobile application. Once their reference points are set on the android NavSense app, a smartwatch allows them to “feel” their orientation without the need to look at their mobile device by sending vibration patterns when they are facing one of their reference points.</p>
+          <p><u><b>Desired functionalities in relation to the objectives (above paragraph):</b></u></p>
+          <ol>
+            <li>Create a mobile application that is easy to use and allows users to personalize their orientation needs.</li>
+            <li>Allow the user to place customized reference points on a map.</li>
+            <li>Relate vibration patterns generated on a wearable interface to the user’s reference points.</li>
+            <li>Ensure that when facing a reference point, the wearable device will vibrate accordingly and without excessive delay.</li>
+            <li>The user does not need to look at their mobile device to orient themselves once they have set up the application and initialized the wearable interface.</li>
+
+          </ol>
+          <p><u><b>About vibration patterns “previewing”</b></u></p>
+          <p>
+          It was mentioned in the comments from Alpha prototype that since the vibration preview “still was not functioning” the project was not fully addressing the course theme of “enhancing us as humans”. NavSense team believes that although this element would have been interesting to have and would have reduced the learning curve of the system and made it easier to use, it does not impact the way the system affects the user’s orientation abilities. The user can learn the vibration pattern-reference association by having a quick glance at the text display on the Pebble watch the first few times he will be using the system. Then, considering that the system is meant to be a “long term” orientation aid, it is hypothesized that the vibrations will fade in the sensory background and will not require active attention but this is a considerable assumption and would require long term user testing.</p>
+
+          <p><u><b>Fulfilling the project objective “enhancing us as humans” </b></u></p>
+          <p>	The NavSense team believes its proposed system in the beta prototype state is successful at enhancing the human orientation capacities. The NavSense system helps the user at getting a better understanding of its current orientation in an environment where he is unfamiliar with. It does so by rendering simple vibration patterns that reduces the load on already over exploited visual and audio modalities. Furthermore, in contrast with existing systems that are limited to pointing North, NavSense allows the user to select its own reference points which makes the orientation cues a lot more personal and increases how the user relates to them.</p>
+          <h2>Demonstration of differences between Alpha and Beta prototypes</h2>
+          <p>The most recent version of the application is available <a href="http://cs.mcgill.ca/~akam5/betaPrototype.apk">here</a></p>
+          <p>Below are two videos demonstrating different interactions with the GUI and a video from alpha prototype showing how the pebble watch is used in the optimal arm position for accuracy.</p>
+          <ul>
+            <li><a href="video_pebble.mp4">Alpha Prototype Demonstration</a></li>
+            <li><a href="video_beta.mp4">Beta Prototype Demonstration</a></li>
+          </ul>
+          <h2>Refinement of user manual or installation guide</h2>
+          <p>	Building on version 2 of the user manual, refinements were done in response to feedback from getting a user to read it as well as comments from the alpha prototype assessment. As with the alpha prototype, <b>the changes are outlined in the change log located at the last page of the user guide.</b> One of the main modifications is the addition of a section dedicated on how you should position yourself to get the best accuracy with the system. Other minor modifications were done: updating all of the figures because of GUI changes, correcting typos, and removing a paragraph that was no longer relevant.</p>
+          <p>The refined user and installation guide can be found <a href="UserGuide_v3.pdf">here</a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (belo), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+$("h1").css("padding-top","60px");
+$("h1").css("margin-top","-60px");
+$("h2").css("padding-top","60px");
+$("h2").css("margin-top","-60px");
+    </script>
+  </body>
+</html>
